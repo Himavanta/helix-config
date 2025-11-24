@@ -9,7 +9,7 @@ scope = "source.typescript"
 [[language]]
 auto-format = true
 file-types = ["js", "jsx", "mjs", "cjs"]
-formatter = {command = "npx", args = ["prettier", "--parser", "javascript"]}
+formatter = {command = "npx", args = ["prettier", "--parser", "typescript"]}
 name = "javascript"
 scope = "source.javascript"
 
@@ -22,17 +22,10 @@ scope = "source.css"
 
 [[language]]
 auto-format = true
-file-types = ["sass", "scss"]
+file-types = ["scss"]
 formatter = {command = "npx", args = ["prettier", "--parser", "scss"]}
-name = "sass"
-scope = "source.sass"
-
-[[language]]
-auto-format = true
-file-types = ["less"]
-formatter = {command = "npx", args = ["prettier", "--parser", "less"]}
-name = "less"
-scope = "source.less"
+name = "scss"
+scope = "source.scss"
 
 [[language]]
 auto-format = true
@@ -43,7 +36,7 @@ scope = "source.html"
 
 [[language]]
 auto-format = true
-file-types = ["json", "jsonc", "json5", "jsonl"]
+file-types = ["json"]
 formatter = {command = "npx", args = ["prettier", "--parser", "json"]}
 name = "json"
 scope = "source.json"
@@ -58,7 +51,7 @@ scope = "source.yaml"
 [[language]]
 auto-format = true
 file-types = ["md"]
-formatter = {command = "npx", args = ["prettier", "--parser", "md"]}
+formatter = {command = "npx", args = ["prettier", "--parser", "markdown"]}
 name = "markdown"
 scope = "source.markdown"
 
