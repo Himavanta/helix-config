@@ -1,0 +1,23 @@
+theme = "dark_plus"
+
+[editor]
+auto-format = true
+clipboard-provider = "termcode"
+cursorline = true
+mouse = false
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-save]
+after-delay.enable = true
+focus-lost = true
+
+[editor.soft-wrap]
+enable = true

@@ -1,0 +1,81 @@
+
+[[language]]
+auto-format = true
+file-types = ["ts", "tsx"]
+formatter = {command = "npx", args = ["prettier", "--parser", "typescript"]}
+name = "typescript"
+scope = "source.typescript"
+
+[[language]]
+auto-format = true
+file-types = ["js", "jsx", "mjs", "cjs"]
+formatter = {command = "npx", args = ["prettier", "--parser", "javascript"]}
+name = "javascript"
+scope = "source.javascript"
+
+[[language]]
+auto-format = true
+file-types = ["css"]
+formatter = {command = "npx", args = ["prettier", "--parser", "css"]}
+name = "css"
+scope = "source.css"
+
+[[language]]
+auto-format = true
+file-types = ["sass", "scss"]
+formatter = {command = "npx", args = ["prettier", "--parser", "scss"]}
+name = "sass"
+scope = "source.sass"
+
+[[language]]
+auto-format = true
+file-types = ["less"]
+formatter = {command = "npx", args = ["prettier", "--parser", "less"]}
+name = "less"
+scope = "source.less"
+
+[[language]]
+auto-format = true
+file-types = ["html"]
+formatter = {command = "npx", args = ["prettier", "--parser", "html"]}
+name = "html"
+scope = "source.html"
+
+[[language]]
+auto-format = true
+file-types = ["json", "jsonc", "json5", "jsonl"]
+formatter = {command = "npx", args = ["prettier", "--parser", "json"]}
+name = "json"
+scope = "source.json"
+
+[[language]]
+auto-format = true
+file-types = ["yaml"]
+formatter = {command = "npx", args = ["prettier", "--parser", "yaml"]}
+name = "yaml"
+scope = "source.yaml"
+
+[[language]]
+auto-format = true
+file-types = ["md"]
+formatter = {command = "npx", args = ["prettier", "--parser", "md"]}
+name = "markdown"
+scope = "source.markdown"
+
+[[language]]
+auto-format = true
+file-types = ["vue"]
+formatter = {command = "npx", args = ["prettier", "--parser", "vue"]}
+injection-regex = "vue"
+language-servers = ["vue-language-server", "typescript-language-server"]
+name = "vue"
+scope = "source.vue"
+
+[language-server.vue-language-server]
+args = ["@vue/language-server", "--stdio"]
+command = "npx"
+
+[language-server.typescript-language-server.config]
+plugins = [
+  {name = "@vue/typescript-plugin", location = "@vue/language-server", languages = ["vue"]},
+]
