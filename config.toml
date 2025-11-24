@@ -3,6 +3,7 @@ theme = "dark_plus"
 [editor]
 auto-format = true
 cursorline = true
+gutters = ["diff", "line-numbers", "spacer", "spacer"]
 true-color = true
 
 [editor.auto-save]
