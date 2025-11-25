@@ -1,5 +1,3 @@
 ```shell
-npm i -D @vue/language-server
-npm i -g typescript typescript-language-server @vue/typescript-plugin
-npm i -g prettier vscode-langservers-extracted
+npm i -g typescript typescript-language-server @vue/typescript-plugin @vue/language-server prettier vscode-langservers-extracted
 ```
