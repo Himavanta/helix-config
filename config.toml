@@ -12,3 +12,12 @@ focus-lost = true
 
 [editor.soft-wrap]
 enable = true
+
+[editor.lsp]
+display-inlay-hints = true
+display-progress-messages = true
+
+[editor.cursor-shape]
+insert = "underline"
+normal = "underline"
+select = "underline"

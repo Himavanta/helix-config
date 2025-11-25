@@ -1,6 +1,5 @@
 ```shell
-npm i -g typescript-language-server @vue/typescript-plugin
-
-# 必须要在项目中安装
-npm i -D typescript @vue/language-server
+npm i -D @vue/language-server
+npm i -g typescript typescript-language-server @vue/typescript-plugin
+npm i -g prettier vscode-langservers-extracted
 ```

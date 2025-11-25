@@ -29,6 +29,13 @@ scope = "source.scss"
 
 [[language]]
 auto-format = true
+file-types = ["less"]
+formatter = {command = "npx", args = ["prettier", "--parser", "less"]}
+name = "less"
+scope = "source.less"
+
+[[language]]
+auto-format = true
 file-types = ["html"]
 formatter = {command = "npx", args = ["prettier", "--parser", "html"]}
 name = "html"
@@ -60,7 +67,12 @@ auto-format = true
 file-types = ["vue"]
 formatter = {command = "npx", args = ["prettier", "--parser", "vue"]}
 injection-regex = "vue"
-language-servers = ["vue-language-server", "typescript-language-server"]
+language-servers = [
+  "vue-language-server",
+  "typescript-language-server",
+  "vscode-html-language-server",
+  "vscode-css-language-server",
+]
 name = "vue"
 scope = "source.vue"
 
