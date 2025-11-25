@@ -18,6 +18,6 @@ display-inlay-hints = true
 display-progress-messages = true
 
 [editor.cursor-shape]
-insert = "underline"
-normal = "underline"
-select = "underline"
+insert = "bar"
+normal = "bar"
+select = "bar"
