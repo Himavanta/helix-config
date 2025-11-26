@@ -2,70 +2,70 @@
 [[language]]
 auto-format = true
 file-types = ["ts", "tsx"]
-formatter = {command = "prettier", args = ["--parser", "typescript"]}
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
 name = "typescript"
 scope = "source.typescript"
 
 [[language]]
 auto-format = true
 file-types = ["js", "jsx", "mjs", "cjs"]
-formatter = {command = "prettier", args = ["--parser", "typescript"]}
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
 name = "javascript"
 scope = "source.javascript"
 
 [[language]]
 auto-format = true
 file-types = ["css"]
-formatter = {command = "prettier", args = ["--parser", "css"]}
+formatter = { command = "prettier", args = ["--parser", "css"] }
 name = "css"
 scope = "source.css"
 
 [[language]]
 auto-format = true
 file-types = ["scss"]
-formatter = {command = "prettier", args = ["--parser", "scss"]}
+formatter = { command = "prettier", args = ["--parser", "scss"] }
 name = "scss"
 scope = "source.scss"
 
 [[language]]
 auto-format = true
 file-types = ["less"]
-formatter = {command = "prettier", args = ["--parser", "less"]}
+formatter = { command = "prettier", args = ["--parser", "less"] }
 name = "less"
 scope = "source.less"
 
 [[language]]
 auto-format = true
 file-types = ["html"]
-formatter = {command = "prettier", args = ["--parser", "html"]}
+formatter = { command = "prettier", args = ["--parser", "html"] }
 name = "html"
 scope = "source.html"
 
 [[language]]
 auto-format = true
 file-types = ["json"]
-formatter = {command = "prettier", args = ["--parser", "json"]}
+formatter = { command = "prettier", args = ["--parser", "json"] }
 name = "json"
 scope = "source.json"
 
 [[language]]
 auto-format = true
 file-types = ["yaml"]
-formatter = {command = "prettier", args = ["--parser", "yaml"]}
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
 name = "yaml"
 scope = "source.yaml"
 
 [[language]]
 auto-format = true
 file-types = ["md"]
-formatter = {command = "prettier", args = ["--parser", "markdown"]}
+formatter = { command = "prettier", args = ["--parser", "markdown"] }
 name = "markdown"
 scope = "source.markdown"
 
 [[language]]
 auto-format = true
 file-types = ["vue"]
-formatter = {command = "prettier", args = ["--parser", "vue"]}
+formatter = { command = "prettier", args = ["--parser", "vue"] }
 language-servers = [
   "vue-language-server",
   "typescript-language-server",
@@ -81,5 +81,7 @@ command = "@vue/language-server"
 
 [language-server.typescript-language-server.config]
 plugins = [
-  {name = "@vue/typescript-plugin", location = "@vue/language-server", languages = ["vue"]},
+  { name = "@vue/typescript-plugin", location = "@vue/language-server", languages = [
+    "vue",
+  ] },
 ]
