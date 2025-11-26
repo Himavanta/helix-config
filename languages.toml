@@ -66,7 +66,6 @@ scope = "source.markdown"
 auto-format = true
 file-types = ["vue"]
 formatter = {command = "prettier", args = ["--parser", "vue"]}
-injection-regex = "vue"
 language-servers = [
   "vue-language-server",
   "typescript-language-server",
