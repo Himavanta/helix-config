@@ -1,7 +1,7 @@
 
 [[language]]
 auto-format = true
-file-types = ["ts", "tsx"]
+file-types = ["ts", "tsx", "mts"]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 name = "typescript"
 scope = "source.typescript"
