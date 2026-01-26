@@ -5,6 +5,7 @@ auto-format = true
 cursorline = true
 gutters = ["diff", "line-numbers", "spacer", "spacer"]
 true-color = true
+line-number = 'relative'
 
 [editor.auto-save]
 after-delay.enable = true
@@ -19,3 +20,4 @@ hidden = false
 [editor.lsp]
 display-inlay-hints = true
 display-progress-messages = true
+
