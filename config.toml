@@ -6,6 +6,7 @@ cursorline = true
 gutters = ["diff", "line-numbers", "spacer", "spacer"]
 true-color = true
 line-number = 'relative'
+auto-pairs = false
 
 [editor.auto-save]
 after-delay.enable = true
