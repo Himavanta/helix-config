@@ -1,86 +1,95 @@
 
 [[language]]
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+# formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "dummy.tsx"] }
 auto-format = true
 file-types = ["tsx"]
-name = "typescriptreact"
-scope = "source.typescript"
+name = "tsx"
+scope = "source.tsx"
 
 [[language]]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 auto-format = true
 file-types = ["ts"]
 name = "typescript"
-scope = "source.typescript"
+scope = "source.ts"
 
 [[language]]
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+# formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "dummy.jsx"] }
 auto-format = true
 file-types = ["jsx"]
-name = "javascriptreact"
-scope = "source.typescript"
-
+name = "jsx"
+scope = "source.jsx"
 
 [[language]]
 auto-format = true
 file-types = ["js", "mjs", "cjs"]
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "prettier" }
 name = "javascript"
 scope = "source.javascript"
 
 [[language]]
 auto-format = true
 file-types = ["css"]
-formatter = { command = "prettier", args = ["--parser", "css"] }
+# formatter = { command = "prettier", args = ["--parser", "css"] }
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "dummy.css"] }
 name = "css"
 scope = "source.css"
 
 [[language]]
 auto-format = true
 file-types = ["scss"]
-formatter = { command = "prettier", args = ["--parser", "scss"] }
+# formatter = { command = "prettier", args = ["--parser", "scss"] }
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "dummy.scss"] }
 name = "scss"
 scope = "source.scss"
 
 [[language]]
 auto-format = true
 file-types = ["less"]
-formatter = { command = "prettier", args = ["--parser", "less"] }
+# formatter = { command = "prettier", args = ["--parser", "less"] }
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "dummy.less"] }
 name = "less"
 scope = "source.less"
 
 [[language]]
 auto-format = true
 file-types = ["html"]
-formatter = { command = "prettier", args = ["--parser", "html"] }
+# formatter = { command = "prettier", args = ["--parser", "html"] }
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "dummy.html"] }
 name = "html"
 scope = "source.html"
 
 [[language]]
 auto-format = true
 file-types = ["json"]
-formatter = { command = "prettier", args = ["--parser", "json"] }
+# formatter = { command = "prettier", args = ["--parser", "json"] }
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "dummy.json"] }
 name = "json"
 scope = "source.json"
 
 [[language]]
 auto-format = true
 file-types = ["yaml"]
-formatter = { command = "prettier", args = ["--parser", "yaml"] }
+# formatter = { command = "prettier", args = ["--parser", "yaml"] }
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "dummy.yaml"] }
 name = "yaml"
 scope = "source.yaml"
 
 [[language]]
 auto-format = true
 file-types = ["md"]
-formatter = { command = "prettier", args = ["--parser", "markdown"] }
+# formatter = { command = "prettier", args = ["--parser", "markdown"] }
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "dummy.md"] }
 name = "markdown"
 scope = "source.markdown"
 
 [[language]]
 auto-format = true
 file-types = ["vue"]
-formatter = { command = "prettier", args = ["--parser", "vue"] }
+# formatter = { command = "prettier", args = ["--parser", "vue"] }
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "dummy.vue"] }
 language-servers = [
   "vue-language-server",
   "typescript-language-server",
