@@ -1,14 +1,29 @@
 
 [[language]]
-auto-format = true
-file-types = ["ts", "tsx", "mts"]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
+file-types = ["tsx"]
+name = "typescriptreact"
+scope = "source.typescript"
+
+[[language]]
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
+file-types = ["ts"]
 name = "typescript"
 scope = "source.typescript"
 
 [[language]]
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
 auto-format = true
-file-types = ["js", "jsx", "mjs", "cjs"]
+file-types = ["jsx"]
+name = "javascriptreact"
+scope = "source.typescript"
+
+
+[[language]]
+auto-format = true
+file-types = ["js", "mjs", "cjs"]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 name = "javascript"
 scope = "source.javascript"
