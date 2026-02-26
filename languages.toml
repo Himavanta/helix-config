@@ -8,9 +8,10 @@ name = "tsx"
 scope = "source.tsx"
 
 [[language]]
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+# formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "dummy.ts"] }
 auto-format = true
-file-types = ["ts"]
+file-types = ["ts", "mts"]
 name = "typescript"
 scope = "source.ts"
 
@@ -25,7 +26,8 @@ scope = "source.jsx"
 [[language]]
 auto-format = true
 file-types = ["js", "mjs", "cjs"]
-formatter = { command = "prettier" }
+# formatter = { command = "prettier" }
+formatter = { command = "oxfmt", args = ["--stdin-filepath", "dummy.js"] }
 name = "javascript"
 scope = "source.javascript"
 
